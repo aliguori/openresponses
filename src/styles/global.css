@@ -47,7 +47,7 @@ body {
     }
 
     img.openrouter {
-      @apply h-20 lg:h-16;
+      @apply h-12;
     }
   }
 }
