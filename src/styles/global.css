@@ -30,7 +30,6 @@ body {
 
 .article-container {
   .logos-container {
-    @apply relative left-1/2 -translate-x-1/2 lg:w-[min(75vw,950px)];
     @apply items-center justify-center gap-6 p-0 py-12 lg:gap-12 lg:py-24;
 
     img {
