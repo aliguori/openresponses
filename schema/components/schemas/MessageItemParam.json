@@ -1,0 +1,19 @@
+{
+  "oneOf": [
+    { "$ref": "./UserMessageItemParam.json" },
+    { "$ref": "./SystemMessageItemParam.json" },
+    { "$ref": "./DeveloperMessageItemParam.json" },
+    { "$ref": "./AssistantMessageItemParam.json" }
+  ],
+  "discriminator": {
+    "propertyName": "role"
+  },
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["message"],
+      "default": "message"
+    }
+  },
+  "description": "A message item with role-based discrimination."
+}
