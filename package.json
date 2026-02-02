@@ -13,7 +13,8 @@
     "prepare": "husky",
     "dev:astro": "astro dev",
     "dev": "bun run spec && bun run llms && bun run dev:astro",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test:compliance": "bun run bin/compliance-test.ts"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "@kubb/core": "^4.15.0",
     "@kubb/plugin-oas": "^4.15.0",
     "@kubb/plugin-zod": "^4.15.0",
+    "@typespec/prettier-plugin-typespec": "^1.8.0",
     "autoprefixer": "^10.4.21",
     "concurrently": "^9.1.0",
     "husky": "^9.1.7",
